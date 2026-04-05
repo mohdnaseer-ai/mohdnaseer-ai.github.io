@@ -6,66 +6,93 @@
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
 }
 
 /* Navbar */
 .nav {
-  background: #020617;
-  padding: 15px;
-  text-align: center;
-  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
 }
 
-/* Hero Section */
+.nav h2 {
+  margin: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Hero */
 .hero {
   text-align: center;
-  padding: 60px 20px;
+  padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 50px;
+}
+
+.hero span {
+  color: #3b82f6;
 }
 
 .hero p {
   color: #94a3b8;
+  font-size: 18px;
 }
 
 /* Section */
 .section {
-  padding: 40px;
-  max-width: 900px;
+  padding: 60px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
 /* Cards */
 .card {
-  background: #1e293b;
-  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
   margin: 20px 0;
-  border-radius: 10px;
-  transition: 0.3s;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: translateY(-10px);
 }
 
 /* Buttons */
 .btn {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 15px;
-  background: #3b82f6;
+  padding: 10px 18px;
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #2563eb;
+  opacity: 0.8;
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px;
 }
 
 /* Footer */
@@ -81,34 +108,39 @@ body {
 <body>
 
 <div class="nav">
-  Mohd Naseer Uddin | Portfolio
+  <h2>Naseer</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 </div>
 
 <div class="hero">
-  <h1>AI & Machine Learning Engineer</h1>
-  <p>Building intelligent systems using Machine Learning & Data Science</p>
+  <h1>Hi, I'm <span>Mohd Naseer</span></h1>
+  <p>AI & Machine Learning Engineer | Data Science Enthusiast</p>
 </div>
 
-<div class="section">
+<div class="section" id="about">
   <h2>About Me</h2>
   <p>
-    I am a Computer Science Engineering graduate specializing in AI & ML.
-    I build machine learning models and intelligent systems to solve real-world problems.
+    I am a Computer Science Engineering graduate specializing in Artificial Intelligence and Machine Learning.
+    I build intelligent systems using machine learning, data analysis, and deep learning techniques to solve real-world problems.
   </p>
 </div>
 
-<div class="section">
+<div class="section" id="projects">
   <h2>Projects</h2>
 
   <div class="card">
     <h3>🔐 AI Password Security</h3>
-    <p>Machine learning system to detect weak passwords and generate secure ones using deep learning.</p>
+    <p>Deep learning system to detect weak passwords and generate secure ones using LSTM and GRU models.</p>
     <a class="btn" href="https://github.com/mohdnaseer-ai/ai-password-security" target="_blank">View Project</a>
   </div>
 
   <div class="card">
     <h3>🛡️ Android Malware Detection</h3>
-    <p>Ensemble learning model to detect malicious Android applications with high accuracy.</p>
+    <p>Ensemble learning model using LS-SVM, KELM, and RRVFLN to detect malicious Android apps.</p>
     <a class="btn" href="https://github.com/mohdnaseer-ai/android-malware-detection-ml" target="_blank">View Project</a>
   </div>
 
@@ -116,23 +148,24 @@ body {
 
 <div class="section">
   <h2>Skills</h2>
-  <p>Python | Machine Learning | SQL | Data Science | Power BI | Tableau</p>
+  <div class="skills">
+    <span>Python</span>
+    <span>Machine Learning</span>
+    <span>SQL</span>
+    <span>Data Science</span>
+    <span>Power BI</span>
+    <span>Tableau</span>
+  </div>
 </div>
 
-<div class="section">
+<div class="section" id="contact">
   <h2>Contact</h2>
 
-  <p>
-    <a class="btn" href="mailto:mohdnaseernaveed@gmail.com">Email Me</a>
-  </p>
+  <p><a class="btn" href="mailto:mohdnaseernaveed@gmail.com">Email Me</a></p>
 
-  <p>
-    <a class="btn" href="https://linkedin.com/in/mohd-naseer-uddin-4aa21324a" target="_blank">LinkedIn</a>
-  </p>
+  <p><a class="btn" href="https://linkedin.com/in/mohd-naseer-uddin-4aa21324a" target="_blank">LinkedIn</a></p>
 
-  <p>
-    <a class="btn" href="https://github.com/mohdnaseer-ai" target="_blank">GitHub</a>
-  </p>
+  <p><a class="btn" href="https://github.com/mohdnaseer-ai" target="_blank">GitHub</a></p>
 
 </div>
 
