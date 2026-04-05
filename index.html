@@ -2,73 +2,142 @@
 <html>
 <head>
 <title>Mohd Naseer Portfolio</title>
+
 <style>
 body {
-  font-family: Arial;
-  margin: 40px;
-  background: #f5f5f5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
 }
-h1 { color: #2c3e50; }
+
+/* Navbar */
+.nav {
+  background: #020617;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  color: #94a3b8;
+}
+
+/* Section */
 .section {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
 }
-a { color: blue; }
+
+/* Cards */
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}
 </style>
+
 </head>
 
 <body>
 
-<h1>Mohd Naseer Uddin</h1>
-<p><b>AI & Machine Learning Engineer</b></p>
+<div class="nav">
+  Mohd Naseer Uddin | Portfolio
+</div>
 
-<div class="section">
-<h2>About Me</h2>
-<p>I am a Computer Science Engineering graduate specializing in AI & ML with strong skills in Python, Machine Learning, and Data Science.</p>
+<div class="hero">
+  <h1>AI & Machine Learning Engineer</h1>
+  <p>Building intelligent systems using Machine Learning & Data Science</p>
 </div>
 
 <div class="section">
-<h2>Projects</h2>
+  <h2>About Me</h2>
+  <p>
+    I am a Computer Science Engineering graduate specializing in AI & ML.
+    I build machine learning models and intelligent systems to solve real-world problems.
+  </p>
+</div>
 
-<h3>AI Password Security</h3>
-<p>Machine learning model to detect weak passwords and generate secure ones.</p>
-<a href="https://github.com/mohdnaseer-ai/ai-password-security">View Project</a>
+<div class="section">
+  <h2>Projects</h2>
 
-<h3>Android Malware Detection</h3>
-<p>Ensemble learning system to detect malicious Android apps.</p>
-<a href="https://github.com/mohdnaseer-ai/android-malware-detection-ml">View Project</a>
+  <div class="card">
+    <h3>🔐 AI Password Security</h3>
+    <p>Machine learning system to detect weak passwords and generate secure ones using deep learning.</p>
+    <a class="btn" href="https://github.com/mohdnaseer-ai/ai-password-security" target="_blank">View Project</a>
+  </div>
+
+  <div class="card">
+    <h3>🛡️ Android Malware Detection</h3>
+    <p>Ensemble learning model to detect malicious Android applications with high accuracy.</p>
+    <a class="btn" href="https://github.com/mohdnaseer-ai/android-malware-detection-ml" target="_blank">View Project</a>
+  </div>
 
 </div>
 
 <div class="section">
-<h2>Skills</h2>
-<p>Python, Machine Learning, SQL, Data Science, Power BI, Tableau</p>
+  <h2>Skills</h2>
+  <p>Python | Machine Learning | SQL | Data Science | Power BI | Tableau</p>
 </div>
 
 <div class="section">
-<h2>Contact</h2>
+  <h2>Contact</h2>
 
-<p>Email: 
-<a href="mailto:mohdnaseernaveed@gmail.com">
-mohdnaseernaveed@gmail.com
-</a>
-</p>
+  <p>
+    <a class="btn" href="mailto:mohdnaseernaveed@gmail.com">Email Me</a>
+  </p>
 
-<p>LinkedIn: 
-<a href="https://linkedin.com/in/mohd-naseer-uddin-4aa21324a" target="_blank">
-View Profile
-</a>
-</p>
+  <p>
+    <a class="btn" href="https://linkedin.com/in/mohd-naseer-uddin-4aa21324a" target="_blank">LinkedIn</a>
+  </p>
 
-<p>GitHub: 
-<a href="https://github.com/mohdnaseer-ai" target="_blank">
-Visit GitHub
-</a>
-</p>
+  <p>
+    <a class="btn" href="https://github.com/mohdnaseer-ai" target="_blank">GitHub</a>
+  </p>
 
 </div>
+
+<div class="footer">
+  © 2026 Mohd Naseer Uddin
 </div>
 
 </body>
