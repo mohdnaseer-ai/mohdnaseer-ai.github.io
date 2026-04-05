@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mohd Naseer Portfolio</title>
+<title>Mohd Naseer | AI Engineer</title>
 
 <style>
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0f172a, #020617);
+  background: #0f172a;
   color: white;
 }
 
@@ -15,13 +15,14 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(10px);
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.4);
 }
 
+.nav h2 { margin: 0; }
+
 .nav a {
-  color: white;
+  color: #cbd5f5;
   margin-left: 20px;
   text-decoration: none;
 }
@@ -29,73 +30,60 @@ body {
 /* Hero */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .hero h1 {
-  font-size: 50px;
+  font-size: 48px;
 }
 
 .hero span {
   color: #3b82f6;
 }
 
-.btn {
-  padding: 10px 20px;
-  margin: 10px;
-  background: linear-gradient(45deg, #3b82f6, #06b6d4);
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
+.hero p {
+  color: #94a3b8;
+  font-size: 18px;
 }
 
 /* Section */
 .section {
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
-  padding: 50px 20px;
-}
-
-/* About */
-.about {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
-.about img {
-  width: 150px;
-  border-radius: 50%;
+  padding: 60px 20px;
 }
 
 /* Cards */
 .card {
-  background: rgba(255,255,255,0.05);
+  background: #1e293b;
   padding: 25px;
+  border-radius: 12px;
   margin: 20px 0;
-  border-radius: 15px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
 /* Skills */
-.skill {
-  margin: 10px 0;
-}
-
-.bar {
-  height: 8px;
+.skills span {
   background: #1e293b;
-  border-radius: 5px;
-}
-
-.fill {
-  height: 8px;
-  background: #3b82f6;
-  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 6px;
 }
 
 /* Footer */
@@ -121,16 +109,14 @@ body {
 
 <div class="hero">
   <h1>Hi, I'm <span>Mohd Naseer</span></h1>
-  <p>AI & Machine Learning Engineer</p>
-  <a class="btn" href="#projects">View Projects</a>
-  <a class="btn" href="#">Download Resume</a>
+  <p>AI & Machine Learning Engineer | Building real-world intelligent systems</p>
 </div>
 
-<div class="section about" id="about">
-  <img src="https://via.placeholder.com/150" alt="profile">
+<div class="section" id="about">
+  <h2>About Me</h2>
   <p>
-    I am a Computer Science Engineering graduate specializing in AI & ML.
-    I build intelligent systems using Machine Learning and Data Science to solve real-world problems.
+    I am a Computer Science Engineering graduate specializing in Artificial Intelligence and Machine Learning.
+    I focus on building intelligent systems using machine learning, data analysis, and deep learning techniques.
   </p>
 </div>
 
@@ -139,13 +125,13 @@ body {
 
   <div class="card">
     <h3>🔐 AI Password Security</h3>
-    <p>Deep learning model using LSTM & GRU to detect weak passwords.</p>
+    <p>ML & deep learning system to detect weak passwords and enhance security.</p>
     <a class="btn" href="https://github.com/mohdnaseer-ai/ai-password-security" target="_blank">GitHub</a>
   </div>
 
   <div class="card">
     <h3>🛡️ Android Malware Detection</h3>
-    <p>Ensemble learning model to detect malicious Android apps.</p>
+    <p>Ensemble learning model to detect malicious Android applications.</p>
     <a class="btn" href="https://github.com/mohdnaseer-ai/android-malware-detection-ml" target="_blank">GitHub</a>
   </div>
 
@@ -153,22 +139,14 @@ body {
 
 <div class="section">
   <h2>Skills</h2>
-
-  <div class="skill">
-    Python
-    <div class="bar"><div class="fill" style="width:90%"></div></div>
+  <div class="skills">
+    <span>Python</span>
+    <span>Machine Learning</span>
+    <span>SQL</span>
+    <span>Data Science</span>
+    <span>Power BI</span>
+    <span>Tableau</span>
   </div>
-
-  <div class="skill">
-    Machine Learning
-    <div class="bar"><div class="fill" style="width:85%"></div></div>
-  </div>
-
-  <div class="skill">
-    SQL
-    <div class="bar"><div class="fill" style="width:80%"></div></div>
-  </div>
-
 </div>
 
 <div class="section" id="contact">
